@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" type="text/css" href="PrincipalStyle.css" />
+  <link rel="stylesheet"  href= "iconos/style.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=unicode-UTF-8" >
+   <meta charset="utf-8">
+   <script src="js/jquery.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script> 
+   <!--Esto es un comentario-->
+    <meta name="dcterms.created" content="dom., 08 ene. 2017 22:53:59 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>K O N E</title>
+	<link rel="shortcut icon" type="image/x-icon" href="logo.ico">
+    
+  </head>
+  <body>
+  
+  <?php
+	$conn = new mysqli("localhost", "root", ""); 
+	// Check connection
+	if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error); } 
+    echo "Connected successfully";
+	?>
+	
+  <header>
+  	
+	<article class="First">
+	
+   <h1> K            O            N          E </h1>
+   <p> Oryctolagus cuniculus </p>
+   <br />
+   <p> (Librería Amateur)</p>
+   <div>
+   
+   <img id = "Logo" src="logo.jpg" width = "200" alt= "100"> 
+
+   </div>
+   </article>
+  </header>
+<!--span class= "icon-NOMBRE DEL ICONO"  sirve para agregar icons-->
+
+
+    <a href="#" class="Button P"> <span class="icon-home"></span> Inicio </a>       
+    <a href="#" class="Button"> <span class="icon-droplet"></span> Carrito </a> 
+    <a href="#" class="Button"> <span class="icon-dice"></span> Acerca De </a>
+	<input class="Button F" type="search"  placeholder="Buscar" id="Busqueda" />
+	
+	
+	<br />
+	<br />
+	<br />
+	
+	<article class="Seccion">
+	<h3> PokéGarden </h3>
+    <p class="parrafo">
+	
+	<b>PokéGarden</b> es una recopilación de fotos elaboradas a base de dos elementos:
+	Figuras Pokémon & Escenarios de Jardín.
+	</p>
+	<br />
+	<img class="imagenes" src = "Fotos/PokeGarden/Pikachu.jpg"  width="800" alt= "Reflect"   />  
+	<br />
+	<a href="#" class="Button R" > Ver galeria</a>
+	</article> 
+	
+
+	<article class="Seccion">
+	<h3> Kone's Corner </h3>
+    <p class="parrafo">
+    Korak po korak Kone dobiva svoj put ...
+	<br />
+	Alex.
+	</p>
+	<br />
+	<img class="imagenes" src = "Fotos/Personal/RainDrop Gift.jpg"  width=  "800" alt= "Honor" />  
+	<br />
+	<a href="#" class="Button R"> Ver galeria</a>
+	</article>
+	
+	<article class="Seccion">
+	<h3> MorSom </h3>
+	<p class="parrafo"> Mas de algo, un poco de todo, variado. Una vida cotidiana y nada más</p>
+	<br />
+	<img class="imagenes" src="Fotos/Miscelánea/Montas.jpg" width="800" alt="Montas" />
+	<br />
+	<a href="#" class="Button R"> Ver galeria</a>
+	</article>
+  
+  </body>
+</html>

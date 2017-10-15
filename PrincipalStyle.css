@@ -1,0 +1,76 @@
+*{
+margin:0;
+padding:0;
+        height: 100%;
+        width: 100%;   
+ }
+ body{background-image:url('background.jpg'); }
+/*DISEÑO GENERAL*/
+ 
+@media screen{ 
+body { background-color:black;
+line-height:1.3;
+}
+
+#Logo { margin:10px; 
+box-shadow: 0px 0px 5px 5px  black;
+}
+h1,h3, p{ color:white; 
+
+}
+
+h1{font-family:'Chiller'; }
+
+h3{ font-size:60px;
+font-family:chiller; } 
+
+.First{ text-align:center;  
+background-color:none;
+box-shadow: 0px 0px 0px 0px;
+font-size:40px;
+font-family:'Chiller'}
+
+.parrafo{font-size:15px;
+display:inline-block;
+background-color:black; 
+font-family:'Arial';
+box-shadow: 0px 0px 3px 3px #000000;
+}
+
+
+
+.Button{ 
+background:#424242;  /*gris*/
+color:white;
+border-radius:50px;
+display:inline-block; /*permite modigicar el tamaño del boton  "inline" sirve para poner mas botones uno al lado del otro*/
+font-size:20px;  /*tamaño de fuente*/
+margin:20px;    /*margen*/
+padding:10px 0px;
+text-align:center;  /*Asigna el texto al centro*/
+width:200px;    /*Asigna el ancho del boton*/
+text-decoration:none;  /*Quita el subrayado del link*/
+box-shadow:3px 3px 3px  #1C1C1C;
+
+} 
+.Button.P{margin-left:100px; }
+
+
+.Button span{
+margin-right:10px;
+color:#c0392b;
+ }
+ .Seccion { text-align:center; }
+.Button.R{ 
+border-radius:0px;
+margin-left:700px;
+width:100px; }
+
+/*efectos al pasar el mouse*/
+.Button:hover {
+background:#FFFFFF;
+color:black;
+box-shadow:0px 0px 0px;
+padding-top::7px; }
+
+.imagenes{ box-shadow:0px 9px 9px 9px; }
